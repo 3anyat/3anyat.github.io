@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="好的排版让阅读变成享受——聊聊字体、行距和留白。">
+  <title>排版即设计 — 3anyat</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav container">
+      <a href="../index.html" class="site-title">3anyat</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../about.html">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="article">
+      <header class="article-header">
+        <div class="article-meta">2026-05-25</div>
+        <h1 class="article-title">排版即设计</h1>
+      </header>
+
+      <div class="article-body">
+        <p>
+          大多数人对设计的理解停留在"让它好看"。但设计中有一个更基础、也更重要的部分——排版。好的排版不需要任何装饰，本身就足够好看。
+        </p>
+
+        <h2>字体选择</h2>
+
+        <p>
+          网页排版的第一步是选择合适的字体。我的建议是：除非你非常确定自己在做什么，否则使用系统原生字体。
+        </p>
+
+        <p>
+          系统字体有几个好处：无需额外加载（零网络开销）、在每个用户的设备上都渲染良好、不会出现字体加载闪烁（FOUT）。这个博客使用的就是一套系统字体栈，覆盖了 macOS、Windows、iOS 和 Android。
+        </p>
+
+        <pre><code>body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif;
+}</code></pre>
+
+        <h2>行距与行长</h2>
+
+        <p>
+          可读性由两个数字决定：行距（<code>line-height</code>）和行长（<code>max-width</code>）。
+        </p>
+
+        <p>
+          <strong>行距</strong>应该在 1.5 到 1.8 之间。太密会让眼睛难以追踪下一行，太疏会打断阅读的连贯性。这个博客使用的是 1.7。
+        </p>
+
+        <p>
+          <strong>行长</strong>的理想宽度在 60 到 80 个字符之间。超过这个范围，读者的眼睛需要大幅移动，容易疲劳。这也是为什么这个博客的内容区域最大宽度是 680px。
+        </p>
+
+        <h2>留白</h2>
+
+        <p>
+          留白不是"浪费的空间"，而是设计中最活跃的元素之一。适当的留白可以：
+        </p>
+
+        <ul>
+          <li>让内容呼吸，减少视觉压力</li>
+          <li>引导读者的注意力到重要内容</li>
+          <li>创造优雅、从容的阅读节奏</li>
+        </ul>
+
+        <p>
+          这个博客在导航、标题、段落之间都预留了充足的间距。你会发现页面看起来"空"，但这种空是舒适的。
+        </p>
+
+        <h2>颜色</h2>
+
+        <p>
+          对于以文字为主的网站，颜色越少越好。这个博客只用了三种颜色：</p>
+
+        <ul>
+          <li>背景色：温暖的灰白 <code>#fafaf9</code></li>
+          <li>主文字：接近纯黑 <code>#1c1c1e</code></li>
+          <li>次要文字：中性灰 <code>#6e6e73</code></li>
+        </ul>
+
+        <p>
+          没有鲜艳的强调色，没有渐变色块。文字本身的粗细和大小变化已经足够建立视觉层次。
+        </p>
+
+        <h2>总结</h2>
+
+        <p>
+          好的排版是看不见的。当排版做得好时，读者不会注意到它——他们只是顺畅地阅读，沉浸在内容中。而糟糕的排版会不断打断读者的注意力。
+        </p>
+
+        <p>
+          下次设计一个网站时，在添加颜色、图片、动画之前，先把排版做好。你可能会发现——这样已经足够了。
+        </p>
+      </div>
+
+      <nav class="article-nav">
+        <a href="../index.html" class="back-link">← 返回首页</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content container">
+      <span>&copy; 2026 3anyat</span>
+      <span>Powered by GitHub Pages</span>
+    </div>
+  </footer>
+
+</body>
+</html>

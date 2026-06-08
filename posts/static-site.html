@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="静态网站是最简单、最快、最省心的内容发布方式。">
+  <title>为什么选择静态网站 — 3anyat</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav container">
+      <a href="../index.html" class="site-title">3anyat</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../about.html">关于</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="article">
+      <header class="article-header">
+        <div class="article-meta">2026-05-28</div>
+        <h1 class="article-title">为什么选择静态网站</h1>
+      </header>
+
+      <div class="article-body">
+        <p>
+          在决定搭建这个博客时，我考虑过很多方案：WordPress、Ghost、Hexo、Hugo、Next.js... 最终，我选择了最原始的方式——手写 HTML。
+        </p>
+
+        <h2>静态网站是什么</h2>
+
+        <p>
+          简单来说，静态网站就是服务器上存着什么文件，用户访问时就拿到什么文件。没有数据库查询，没有服务端渲染，没有 API 调用——就是一个纯粹的 HTML 文件，加上一点 CSS。
+        </p>
+
+        <p>
+          这和动态网站形成鲜明对比。在动态网站中，每个请求都需要服务器执行代码、查询数据库、组装页面，然后返回给用户。
+        </p>
+
+        <h2>静态网站的优势</h2>
+
+        <h3>1. 极快的速度</h3>
+
+        <p>
+          因为不需要任何服务端运算，静态网站的速度取决于两个因素：文件大小和网络延迟。一个典型的静态页面只有几十 KB，配合 CDN，可以在几十毫秒内完成加载。
+        </p>
+
+        <h3>2. 零安全风险</h3>
+
+        <p>
+          没有数据库就意味着没有 SQL 注入。没有后端代码就意味着没有服务器漏洞。静态网站的攻击面几乎为零。
+        </p>
+
+        <h3>3. 零维护成本</h3>
+
+        <p>
+          不需要更新 PHP 版本，不需要给 WordPress 插件打补丁，不需要担心数据库备份。文件在那儿，就不会坏。
+        </p>
+
+        <p>
+          GitHub Pages 甚至提供了免费的托管服务——包括自动的 HTTPS 证书和全球 CDN。
+        </p>
+
+        <h3>4. 完全掌控</h3>
+
+        <p>
+          每一个字节都是你写的。没有隐藏的依赖，没有黑盒的优化。你清楚地知道你的网站上有什么，没有多余的 JavaScript、没有追踪脚本、没有第三方请求。
+        </p>
+
+        <h2>什么时候不该用静态网站</h2>
+
+        <p>
+          静态网站也有局限。如果你的网站需要以下功能，可能就需要动态后端了：
+        </p>
+
+        <ul>
+          <li>用户注册和登录</li>
+          <li>实时数据更新</li>
+          <li>复杂的搜索功能</li>
+          <li>用户生成内容（如评论区）</li>
+        </ul>
+
+        <p>
+          但对于个人博客来说，这些都不是必需的。博客的核心是内容，而静态网站是呈现内容最纯粹的方式。
+        </p>
+
+        <blockquote>
+          解决问题最好的方式，是让它根本上不存在。没有服务器，就没有服务器问题。
+        </blockquote>
+
+        <p>
+          如果你也在考虑搭建自己的博客，不妨从最基础的方式开始。写一个 HTML 文件，托管在 GitHub Pages 上。它可能不会让你觉得自己很厉害，但它一定很好用。
+        </p>
+      </div>
+
+      <nav class="article-nav">
+        <a href="../index.html" class="back-link">← 返回首页</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content container">
+      <span>&copy; 2026 3anyat</span>
+      <span>Powered by GitHub Pages</span>
+    </div>
+  </footer>
+
+</body>
+</html>
